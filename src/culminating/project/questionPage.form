@@ -83,8 +83,11 @@
                                           <EmptySpace type="separate" max="-2" attributes="0"/>
                                           <Component id="ans4Label" min="-2" pref="196" max="-2" attributes="0"/>
                                       </Group>
-                                      <Group type="102" attributes="0">
-                                          <Component id="iconLabel" min="-2" pref="400" max="-2" attributes="0"/>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                              <Component id="nameLabel" max="32767" attributes="0"/>
+                                              <Component id="iconLabel" max="32767" attributes="0"/>
+                                          </Group>
                                           <EmptySpace max="32767" attributes="0"/>
                                           <Component id="scoreLabel" min="-2" pref="92" max="-2" attributes="0"/>
                                       </Group>
@@ -96,10 +99,6 @@
                           <EmptySpace min="-2" pref="429" max="-2" attributes="0"/>
                           <Component id="ans9Label" min="-2" pref="196" max="-2" attributes="0"/>
                       </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="418" max="-2" attributes="0"/>
-                          <Component id="nameLabel" min="-2" pref="196" max="-2" attributes="0"/>
-                      </Group>
                   </Group>
                   <EmptySpace max="32767" attributes="0"/>
               </Group>
@@ -108,9 +107,9 @@
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="-2" pref="64" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="66" max="-2" attributes="0"/>
                   <Component id="nameLabel" min="-2" pref="27" max="-2" attributes="0"/>
-                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="iconLabel" min="-2" max="-2" attributes="0"/>
                       <Component id="scoreLabel" min="-2" pref="47" max="-2" attributes="0"/>

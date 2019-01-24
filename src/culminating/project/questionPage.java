@@ -240,23 +240,22 @@ public class questionPage extends javax.swing.JFrame {
                                         .addGap(18, 18, 18)
                                         .addComponent(ans4Label, javax.swing.GroupLayout.PREFERRED_SIZE, 196, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(iconLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 400, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                            .addComponent(nameLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                            .addComponent(iconLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                         .addComponent(scoreLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE))))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(429, 429, 429)
-                        .addComponent(ans9Label, javax.swing.GroupLayout.PREFERRED_SIZE, 196, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(418, 418, 418)
-                        .addComponent(nameLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 196, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(ans9Label, javax.swing.GroupLayout.PREFERRED_SIZE, 196, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(64, 64, 64)
+                .addGap(66, 66, 66)
                 .addComponent(nameLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(iconLabel)
                     .addComponent(scoreLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -405,6 +404,7 @@ public class questionPage extends javax.swing.JFrame {
                     clearLabels();
                     quesNum++;
                     startUp();
+                    nameLabel.setText("Field Mushroom");
                 }else if (answer.equals("8")) {
                     score--;
                     scoreLabel.setText("Score: " + score);
@@ -1711,6 +1711,7 @@ public class questionPage extends javax.swing.JFrame {
                     score++;
                     scoreLabel.setText("Score: " + score);
                     clearLabels();
+                    startUp();
                     nameLabel.setText("White-tailed deer");
                 } else if (answer.equals("3")) {
                     score--;
@@ -1920,6 +1921,7 @@ public class questionPage extends javax.swing.JFrame {
                     score++;
                     scoreLabel.setText("Score: " + score);
                     clearLabels();
+                    startUp();
                     nameLabel.setText("Timber rattlesnake");                   
                 } else if (answer.equals("2")) {
                     score--;
@@ -2298,6 +2300,684 @@ public class questionPage extends javax.swing.JFrame {
                     outputLabel.setText("Please enter a number between 1-4 to answer.");
                 }
                 break;
+                
+                case 58:
+                if (answer.equals("1")) { 
+                    score--;
+                    scoreLabel.setText("Score: " + score);
+                    outputLabel.setText("Wrong! Keep Trying!"); 
+                    ans1Label.setText("");
+                } else if (answer.equals("2")) {
+                    score--;
+                    scoreLabel.setText("Score: " + score);
+                    outputLabel.setText("Wrong! Try again!");
+                    ans4Label.setText("");
+                } else if (answer.equals("3")) {
+                    score++;
+                    scoreLabel.setText("Score: " + score);
+                    clearLabels();
+                    quesNum++;
+                    ans5Label.setText(arrayAnsSet2[0]);
+                    ans6Label.setText(arrayAnsSet2[1]);
+                    ans7Label.setText(arrayAnsSet2[2]);
+                    ans8Label.setText(arrayAnsSet2[3]);
+                } else {
+                    outputLabel.setText("Please enter a number between 1-3 to answer.");
+                }
+                break;
+                
+                case 59:
+                if (answer.equals("1")) { 
+                    score--;
+                    scoreLabel.setText("Score: " + score);
+                    outputLabel.setText("Wrong! Keep Trying!"); 
+                    ans5Label.setText("");
+                } else if (answer.equals("2")) {
+                    score--;
+                    scoreLabel.setText("Score: " + score);
+                    outputLabel.setText("Wrong! Keep going!");
+                    ans6Label.setText("");
+                } else if (answer.equals("3")) {
+                    score--;
+                    scoreLabel.setText("Score: " + score);
+                    outputLabel.setText("Wrong! Try again!");
+                    ans7Label.setText("");
+                }else if (answer.equals("4")) {
+                    quesNum++;
+                    score++;
+                    scoreLabel.setText("Score: " + score);
+                    clearLabels();
+                    ans1Label.setText(arrayAnsSet3[0]);
+                    ans2Label.setText(arrayAnsSet3[1]);
+                    ans3Label.setText(arrayAnsSet3[2]);
+                    ans4Label.setText(arrayAnsSet3[3]);
+                    ans5Label.setText(arrayAnsSet3[4]);
+                    ans6Label.setText(arrayAnsSet3[5]);
+                    ans7Label.setText(arrayAnsSet3[6]);
+                    ans8Label.setText(arrayAnsSet3[7]);
+                    ans9Label.setText(arrayAnsSet3[8]);
+                }else {
+                    outputLabel.setText("Please enter a number between 1-4 to answer.");
+                }
+                break;
+                
+                case 60:
+                if (answer.equals("1")) { 
+                    score--;
+                    scoreLabel.setText("Score: " + score);
+                    outputLabel.setText("Wrong! Keep Trying!"); 
+                    ans1Label.setText("");
+                } else if (answer.equals("2")) {
+                    score--;
+                    scoreLabel.setText("Score: " + score);
+                    outputLabel.setText("Wrong! Try again!");
+                    ans2Label.setText("");
+                } else if (answer.equals("3")) {
+                    score++;
+                    scoreLabel.setText("Score: " + score);
+                    clearLabels();
+                    quesNum++;
+                    startUp();
+                    nameLabel.setText("Euglena");             
+                }else if (answer.equals("4")) {
+                    score--;
+                    scoreLabel.setText("Score: " + score);
+                    outputLabel.setText("Take a breathe, you got this!");
+                    ans4Label.setText("");                  
+                }else if (answer.equals("5")) {
+                    score--;
+                    scoreLabel.setText("Score: " + score);
+                    outputLabel.setText("Close!");
+                    ans5Label.setText("");
+                }else if (answer.equals("6")) {
+                    score--;
+                    scoreLabel.setText("Score: " + score);
+                    outputLabel.setText("Almost!");
+                    ans6Label.setText("");
+                }else if (answer.equals("7")) {
+                    score--;
+                    scoreLabel.setText("Score: " + score);
+                    outputLabel.setText("So close!");
+                    ans7Label.setText("");
+                }else if (answer.equals("8")) {
+                    score--;
+                    scoreLabel.setText("Score: " + score);
+                    outputLabel.setText("incorrect! But don't Stop!");
+                    ans8Label.setText("");
+                }else if (answer.equals("9")) {
+                    score--;
+                    scoreLabel.setText("Score: " + score);
+                    outputLabel.setText("Wrong! Keep going!");
+                    ans9Label.setText(""); 
+                }else {
+                    outputLabel.setText("Please enter a number between 1-9 to answer.");
+                }
+                break;
+                
+                case 61:
+                if (answer.equals("1")) { 
+                    score--;
+                    scoreLabel.setText("Score: " + score);
+                    outputLabel.setText("Wrong! Keep Trying!"); 
+                    ans1Label.setText("");
+                } else if (answer.equals("2")) {
+                    score--;
+                    scoreLabel.setText("Score: " + score);
+                    outputLabel.setText("Wrong! Try again!");
+                    ans4Label.setText("");
+                } else if (answer.equals("3")) {
+                    score++;
+                    scoreLabel.setText("Score: " + score);
+                    clearLabels();
+                    quesNum++;
+                    ans5Label.setText(arrayAnsSet2[0]);
+                    ans6Label.setText(arrayAnsSet2[1]);
+                    ans7Label.setText(arrayAnsSet2[2]);
+                    ans8Label.setText(arrayAnsSet2[3]);
+                } else {
+                    outputLabel.setText("Please enter a number between 1-3 to answer.");
+                }
+                break;
+                
+                case 62:
+                if (answer.equals("1")) { 
+                    quesNum++;
+                    score++;
+                    scoreLabel.setText("Score: " + score);
+                    clearLabels();
+                    startUp();
+                    nameLabel.setText("Blood fluke");                    
+                } else if (answer.equals("2")) {
+                    score--;
+                    scoreLabel.setText("Score: " + score);
+                    outputLabel.setText("Wrong! Keep Trying!"); 
+                    ans6Label.setText("");
+                } else if (answer.equals("3")) {
+                    score--;
+                    scoreLabel.setText("Score: " + score);
+                    outputLabel.setText("Wrong! Keep going!");
+                    ans7Label.setText("");                   
+                }else if (answer.equals("4")) {
+                    score--;
+                    scoreLabel.setText("Score: " + score);
+                    outputLabel.setText("Wrong! Try again!");
+                    ans8Label.setText("");
+                }else {
+                    outputLabel.setText("Please enter a number between 1-4 to answer.");
+                }
+                break;
+                
+                case 63:
+                if (answer.equals("1")) { 
+                    score--;
+                    scoreLabel.setText("Score: " + score);
+                    outputLabel.setText("Wrong! Keep Trying!"); 
+                    ans1Label.setText("");
+                } else if (answer.equals("2")) {
+                    score--;
+                    scoreLabel.setText("Score: " + score);
+                    outputLabel.setText("Wrong! Try again!");
+                    ans4Label.setText("");
+                } else if (answer.equals("3")) {
+                    score++;
+                    scoreLabel.setText("Score: " + score);
+                    clearLabels();
+                    quesNum++;
+                    ans5Label.setText(arrayAnsSet2[0]);
+                    ans6Label.setText(arrayAnsSet2[1]);
+                    ans7Label.setText(arrayAnsSet2[2]);
+                    ans8Label.setText(arrayAnsSet2[3]);
+                } else {
+                    outputLabel.setText("Please enter a number between 1-3 to answer.");
+                }
+                break;
+                
+                case 64:
+                if (answer.equals("1")) { 
+                    score--;
+                    scoreLabel.setText("Score: " + score);
+                    outputLabel.setText("Wrong! Keep Trying!"); 
+                    ans5Label.setText("");
+                } else if (answer.equals("2")) {
+                    score--;
+                    scoreLabel.setText("Score: " + score);
+                    outputLabel.setText("Wrong! Try again!");
+                    ans6Label.setText("");
+                } else if (answer.equals("3")) {
+                    score--;
+                    scoreLabel.setText("Score: " + score);
+                    outputLabel.setText("Wrong! Keep going!");
+                    ans7Label.setText("");                   
+                }else if (answer.equals("4")) {
+                    score++;
+                    scoreLabel.setText("Score: " + score);
+                    clearLabels();
+                    quesNum++;
+                    ans1Label.setText(arrayAnsSet3[0]);
+                    ans2Label.setText(arrayAnsSet3[1]);
+                    ans3Label.setText(arrayAnsSet3[2]);
+                    ans4Label.setText(arrayAnsSet3[3]);
+                    ans5Label.setText(arrayAnsSet3[4]);
+                    ans6Label.setText(arrayAnsSet3[5]);
+                    ans7Label.setText(arrayAnsSet3[6]);
+                    ans8Label.setText(arrayAnsSet3[7]);
+                    ans9Label.setText(arrayAnsSet3[8]);
+                }else {
+                    outputLabel.setText("Please enter a number between 1-4 to answer.");
+                }
+                break;
+                
+                case 65:
+                if (answer.equals("1")) { 
+                    score--;
+                    scoreLabel.setText("Score: " + score);
+                    outputLabel.setText("Wrong! Keep Trying!"); 
+                    ans1Label.setText("");
+                } else if (answer.equals("2")) {
+                    score--;
+                    scoreLabel.setText("Score: " + score);
+                    outputLabel.setText("Wrong! Try again!");
+                    ans2Label.setText("");
+                } else if (answer.equals("3")) {
+                    score--;
+                    scoreLabel.setText("Score: " + score);
+                    outputLabel.setText("Wrong! Keep going!");
+                    ans3Label.setText("");                   
+                }else if (answer.equals("4")) {
+                    score++;
+                    scoreLabel.setText("Score: " + score);
+                    clearLabels();
+                    quesNum++;
+                    startUp();
+                    nameLabel.setText("Portuguese Man-o-war");                 
+                }else if (answer.equals("5")) {
+                    score--;
+                    scoreLabel.setText("Score: " + score);
+                    outputLabel.setText("Close!");
+                    ans5Label.setText("");
+                }else if (answer.equals("6")) {
+                    score--;
+                    scoreLabel.setText("Score: " + score);
+                    outputLabel.setText("Almost!");
+                    ans6Label.setText("");
+                }else if (answer.equals("7")) {
+                    score--;
+                    scoreLabel.setText("Score: " + score);
+                    outputLabel.setText("Take a breathe, you got this!");
+                    ans7Label.setText("");
+                }else if (answer.equals("8")) {
+                    score--;
+                    scoreLabel.setText("Score: " + score);
+                    outputLabel.setText("incorrect! But don't Stop!");
+                    ans8Label.setText("");
+                }else if (answer.equals("9")) {
+                    score--;
+                    scoreLabel.setText("Score: " + score);
+                    outputLabel.setText("So close!");
+                    ans9Label.setText("");
+                }else {
+                    outputLabel.setText("Please enter a number between 1-9 to answer.");
+                }
+                break;
+                
+                case 66:
+                if (answer.equals("1")) { 
+                    score--;
+                    scoreLabel.setText("Score: " + score);
+                    outputLabel.setText("Wrong! Keep Trying!"); 
+                    ans1Label.setText("");
+                } else if (answer.equals("2")) {
+                    score--;
+                    scoreLabel.setText("Score: " + score);
+                    outputLabel.setText("Wrong! Try again!");
+                    ans4Label.setText("");
+                } else if (answer.equals("3")) {
+                    score++;
+                    scoreLabel.setText("Score: " + score);
+                    clearLabels();
+                    quesNum++;
+                    ans5Label.setText(arrayAnsSet2[0]);
+                    ans6Label.setText(arrayAnsSet2[1]);
+                    ans7Label.setText(arrayAnsSet2[2]);
+                    ans8Label.setText(arrayAnsSet2[3]);
+                } else {
+                    outputLabel.setText("Please enter a number between 1-3 to answer.");
+                }
+                break;
+                
+                case 67:
+                if (answer.equals("1")) { 
+                    score--;
+                    scoreLabel.setText("Score: " + score);
+                    outputLabel.setText("Wrong! Keep Trying!"); 
+                    ans5Label.setText("");
+                } else if (answer.equals("2")) {
+                    score--;
+                    scoreLabel.setText("Score: " + score);
+                    outputLabel.setText("Wrong! Try again!");
+                    ans6Label.setText("");
+                } else if (answer.equals("3")) {
+                    score--;
+                    scoreLabel.setText("Score: " + score);
+                    outputLabel.setText("Wrong! Keep going!");
+                    ans7Label.setText("");                   
+                }else if (answer.equals("4")) {
+                    score++;
+                    scoreLabel.setText("Score: " + score);
+                    clearLabels();
+                    quesNum++;
+                    ans1Label.setText(arrayAnsSet3[0]);
+                    ans2Label.setText(arrayAnsSet3[1]);
+                    ans3Label.setText(arrayAnsSet3[2]);
+                    ans4Label.setText(arrayAnsSet3[3]);
+                    ans5Label.setText(arrayAnsSet3[4]);
+                    ans6Label.setText(arrayAnsSet3[5]);
+                    ans7Label.setText(arrayAnsSet3[6]);
+                    ans8Label.setText(arrayAnsSet3[7]);
+                    ans9Label.setText(arrayAnsSet3[8]);
+                }else {
+                    outputLabel.setText("Please enter a number between 1-4 to answer.");
+                }
+                break;
+                
+                case 68:
+                if (answer.equals("1")) { 
+                    score--;
+                    scoreLabel.setText("Score: " + score);
+                    outputLabel.setText("Wrong! Keep Trying!"); 
+                    ans1Label.setText("");
+                } else if (answer.equals("2")) {
+                    score++;
+                    scoreLabel.setText("Score: " + score);
+                    clearLabels();
+                    quesNum++;
+                    startUp();
+                    nameLabel.setText("Tarantula");  
+                } else if (answer.equals("3")) {
+                    score--;
+                    scoreLabel.setText("Score: " + score);
+                    outputLabel.setText("Wrong! Keep going!");
+                    ans3Label.setText("");                   
+                }else if (answer.equals("4")) {
+                    score--;
+                    scoreLabel.setText("Score: " + score);
+                    outputLabel.setText("Wrong! Try again!");
+                    ans4Label.setText("");            
+                }else if (answer.equals("5")) {
+                    score--;
+                    scoreLabel.setText("Score: " + score);
+                    outputLabel.setText("Close!");
+                    ans5Label.setText("");
+                }else if (answer.equals("6")) {
+                    score--;
+                    scoreLabel.setText("Score: " + score);
+                    outputLabel.setText("Almost!");
+                    ans6Label.setText("");
+                }else if (answer.equals("7")) {
+                    score--;
+                    scoreLabel.setText("Score: " + score);
+                    outputLabel.setText("Take a breathe, you got this!");
+                    ans7Label.setText("");
+                }else if (answer.equals("8")) {
+                    score--;
+                    scoreLabel.setText("Score: " + score);
+                    outputLabel.setText("incorrect! But don't Stop!");
+                    ans8Label.setText("");
+                }else if (answer.equals("9")) {
+                    score--;
+                    scoreLabel.setText("Score: " + score);
+                    outputLabel.setText("So close!");
+                    ans9Label.setText("");
+                }else {
+                    outputLabel.setText("Please enter a number between 1-9 to answer.");
+                }
+                break;
+
+                case 69:
+                if (answer.equals("1")) { 
+                    score--;
+                    scoreLabel.setText("Score: " + score);
+                    outputLabel.setText("Wrong! Keep Trying!"); 
+                    ans1Label.setText("");
+                } else if (answer.equals("2")) {
+                    score--;
+                    scoreLabel.setText("Score: " + score);
+                    outputLabel.setText("Wrong! Try again!");
+                    ans4Label.setText("");
+                } else if (answer.equals("3")) {
+                    score++;
+                    scoreLabel.setText("Score: " + score);
+                    clearLabels();
+                    quesNum++;
+                    ans5Label.setText(arrayAnsSet2[0]);
+                    ans6Label.setText(arrayAnsSet2[1]);
+                    ans7Label.setText(arrayAnsSet2[2]);
+                    ans8Label.setText(arrayAnsSet2[3]);
+                } else {
+                    outputLabel.setText("Please enter a number between 1-3 to answer.");
+                }
+                break;
+                
+                case 70:
+                if (answer.equals("1")) { 
+                    score--;
+                    scoreLabel.setText("Score: " + score);
+                    outputLabel.setText("Wrong! Keep Trying!"); 
+                    ans5Label.setText("");
+                } else if (answer.equals("2")) {
+                    score--;
+                    scoreLabel.setText("Score: " + score);
+                    outputLabel.setText("Wrong! Keep going!");
+                    ans6Label.setText("");
+                } else if (answer.equals("3")) {
+                    score--;
+                    scoreLabel.setText("Score: " + score);
+                    outputLabel.setText("Wrong! Try again!");
+                    ans7Label.setText("");
+                }else if (answer.equals("4")) {
+                    quesNum++;
+                    score++;
+                    scoreLabel.setText("Score: " + score);
+                    clearLabels();
+                    ans1Label.setText(arrayAnsSet3[0]);
+                    ans2Label.setText(arrayAnsSet3[1]);
+                    ans3Label.setText(arrayAnsSet3[2]);
+                    ans4Label.setText(arrayAnsSet3[3]);
+                    ans5Label.setText(arrayAnsSet3[4]);
+                    ans6Label.setText(arrayAnsSet3[5]);
+                    ans7Label.setText(arrayAnsSet3[6]);
+                    ans8Label.setText(arrayAnsSet3[7]);
+                    ans9Label.setText(arrayAnsSet3[8]);
+                }else {
+                    outputLabel.setText("Please enter a number between 1-4 to answer.");
+                }
+                break;
+                
+                case 71:
+                if (answer.equals("1")) { 
+                    score--;
+                    scoreLabel.setText("Score: " + score);
+                    outputLabel.setText("Wrong! Keep Trying!"); 
+                    ans1Label.setText("");
+                } else if (answer.equals("2")) {
+                    score--;
+                    scoreLabel.setText("Score: " + score);
+                    outputLabel.setText("Wrong! Try again!");
+                    ans2Label.setText("");
+                } else if (answer.equals("3")) {
+                    score++;
+                    scoreLabel.setText("Score: " + score);
+                    clearLabels();
+                    quesNum++;
+                    startUp();
+                    nameLabel.setText("Hammerhead shark");             
+                }else if (answer.equals("4")) {
+                    score--;
+                    scoreLabel.setText("Score: " + score);
+                    outputLabel.setText("Take a breathe, you got this!");
+                    ans4Label.setText("");                  
+                }else if (answer.equals("5")) {
+                    score--;
+                    scoreLabel.setText("Score: " + score);
+                    outputLabel.setText("Close!");
+                    ans5Label.setText("");
+                }else if (answer.equals("6")) {
+                    score--;
+                    scoreLabel.setText("Score: " + score);
+                    outputLabel.setText("Almost!");
+                    ans6Label.setText("");
+                }else if (answer.equals("7")) {
+                    score--;
+                    scoreLabel.setText("Score: " + score);
+                    outputLabel.setText("So close!");
+                    ans7Label.setText("");
+                }else if (answer.equals("8")) {
+                    score--;
+                    scoreLabel.setText("Score: " + score);
+                    outputLabel.setText("incorrect! But don't Stop!");
+                    ans8Label.setText("");
+                }else if (answer.equals("9")) {
+                    score--;
+                    scoreLabel.setText("Score: " + score);
+                    outputLabel.setText("Wrong! Keep going!");
+                    ans9Label.setText(""); 
+                }else {
+                    outputLabel.setText("Please enter a number between 1-9 to answer.");
+                }
+                break;
+                
+                case 72:
+                if (answer.equals("1")) { 
+                    score--;
+                    scoreLabel.setText("Score: " + score);
+                    outputLabel.setText("Wrong! Keep Trying!"); 
+                    ans1Label.setText("");
+                } else if (answer.equals("2")) {
+                    score--;
+                    scoreLabel.setText("Score: " + score);
+                    outputLabel.setText("Wrong! Try again!");
+                    ans4Label.setText("");
+                } else if (answer.equals("3")) {
+                    score++;
+                    scoreLabel.setText("Score: " + score);
+                    clearLabels();
+                    quesNum++;
+                    ans5Label.setText(arrayAnsSet2[0]);
+                    ans6Label.setText(arrayAnsSet2[1]);
+                    ans7Label.setText(arrayAnsSet2[2]);
+                    ans8Label.setText(arrayAnsSet2[3]);
+                } else {
+                    outputLabel.setText("Please enter a number between 1-3 to answer.");
+                }
+                break;
+
+                case 73:
+                if (answer.equals("1")) { 
+                    score--;
+                    scoreLabel.setText("Score: " + score);
+                    outputLabel.setText("Wrong! Keep Trying!"); 
+                    ans5Label.setText("");
+                } else if (answer.equals("2")) {
+                    score--;
+                    scoreLabel.setText("Score: " + score);
+                    outputLabel.setText("Wrong! Keep going!");
+                    ans6Label.setText("");
+                } else if (answer.equals("3")) {
+                    score--;
+                    scoreLabel.setText("Score: " + score);
+                    outputLabel.setText("Wrong! Try again!");
+                    ans7Label.setText("");
+                }else if (answer.equals("4")) {
+                    quesNum++;
+                    score++;
+                    scoreLabel.setText("Score: " + score);
+                    clearLabels();
+                    ans1Label.setText(arrayAnsSet3[0]);
+                    ans2Label.setText(arrayAnsSet3[1]);
+                    ans3Label.setText(arrayAnsSet3[2]);
+                    ans4Label.setText(arrayAnsSet3[3]);
+                    ans5Label.setText(arrayAnsSet3[4]);
+                    ans6Label.setText(arrayAnsSet3[5]);
+                    ans7Label.setText(arrayAnsSet3[6]);
+                    ans8Label.setText(arrayAnsSet3[7]);
+                    ans9Label.setText(arrayAnsSet3[8]);
+                }else {
+                    outputLabel.setText("Please enter a number between 1-4 to answer.");
+                }
+                break;
+                
+                case 74:
+                if (answer.equals("1")) { 
+                    score--;
+                    scoreLabel.setText("Score: " + score);
+                    outputLabel.setText("Wrong! Keep Trying!"); 
+                    ans1Label.setText("");
+                } else if (answer.equals("2")) {
+                    score--;
+                    scoreLabel.setText("Score: " + score);
+                    outputLabel.setText("Wrong! Try again!");
+                    ans2Label.setText("");
+                } else if (answer.equals("3")) {
+                    score--;
+                    scoreLabel.setText("Score: " + score);
+                    outputLabel.setText("Wrong! Keep going!");
+                    ans3Label.setText("");                   
+                }else if (answer.equals("4")) {
+                    score--;
+                    scoreLabel.setText("Score: " + score);
+                    outputLabel.setText("Take a breathe, you got this!");
+                    ans4Label.setText("");                  
+                }else if (answer.equals("5")) {
+                    score--;
+                    scoreLabel.setText("Score: " + score);
+                    outputLabel.setText("Close!");
+                    ans5Label.setText("");
+                }else if (answer.equals("6")) {
+                    score--;
+                    scoreLabel.setText("Score: " + score);
+                    outputLabel.setText("Almost!");
+                    ans6Label.setText("");
+                }else if (answer.equals("7")) {
+                    score--;
+                    scoreLabel.setText("Score: " + score);
+                    outputLabel.setText("So close!");
+                    ans7Label.setText("");
+                }else if (answer.equals("8")) {
+                    score--;
+                    scoreLabel.setText("Score: " + score);
+                    outputLabel.setText("incorrect! But don't Stop!");
+                    ans8Label.setText("");
+                }else if (answer.equals("9")) {
+                    score++;
+                    scoreLabel.setText("Score: " + score);
+                    clearLabels();
+                    quesNum++;
+                    ans1Label.setText(arrayAnsSet5[0]);
+                    ans2Label.setText(arrayAnsSet5[1]);
+                    ans3Label.setText(arrayAnsSet5[2]);
+                    ans4Label.setText(arrayAnsSet5[3]);
+                    ans6Label.setText(arrayAnsSet5[4]);
+                    ans7Label.setText(arrayAnsSet5[5]);
+                    ans9Label.setText(arrayAnsSet5[6]);
+                    
+                }else {
+                    outputLabel.setText("Please enter a number between 1-9 to answer.");
+                }
+                break;
+                
+                case 75:
+                if (answer.equals("1")) { 
+                    score--;
+                    scoreLabel.setText("Score: " + score);
+                    outputLabel.setText("Wrong! Try again!");
+                    ans2Label.setText("");
+                } else if (answer.equals("2")) {
+                    score++;
+                    clearLabels();
+                    quesNum++;
+                    nameLabel.setText("Your final score is: " + score +
+                    " out of 75 marks");
+                    scoreLabel.setText("");
+                    outputLabel.setText("Type 0 to go back to the title page! Thank you"
+                            + " for taking our quiz!");
+                } else if (answer.equals("3")) {
+                    score--;
+                    scoreLabel.setText("Score: " + score);
+                    outputLabel.setText("Wrong! Keep going!");
+                    ans3Label.setText("");                   
+                }else if (answer.equals("4")) {
+                    score--;
+                    scoreLabel.setText("Score: " + score);
+                    outputLabel.setText("Take a breathe, you got this!");
+                    ans4Label.setText("");                  
+                }else if (answer.equals("5")) {
+                    score--;
+                    scoreLabel.setText("Score: " + score);
+                    outputLabel.setText("Close!");
+                    ans6Label.setText("");
+                }else if (answer.equals("6")) {
+                    score--;
+                    scoreLabel.setText("Score: " + score);
+                    outputLabel.setText("Almost!");
+                    ans7Label.setText("");
+                }else if (answer.equals("7")) {
+                    score--;
+                    scoreLabel.setText("Score: " + score);
+                    outputLabel.setText("So close!");
+                    ans9Label.setText("");
+                }else {
+                    outputLabel.setText("Please enter a number between 1-7 to answer.");
+                }
+                break;
+                
+                case 76:
+                if (answer.equals("0")) { 
+                    this.dispose();
+                    titlePage s = new titlePage();
+                    s.setVisible(true);
+                }else{
+                    outputLabel.setText("Please enter 0 to go back to the title page.");
+                }
          }
     }//GEN-LAST:event_ansBoxActionPerformed
 
