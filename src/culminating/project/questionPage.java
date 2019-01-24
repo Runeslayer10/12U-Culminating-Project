@@ -17,6 +17,7 @@ public class questionPage extends javax.swing.JFrame {
 
     int quesNum = 1;
     int score = 0;
+    
     public String ScoreCount = "Score: " + score;
      
     public void startUp() {
@@ -112,7 +113,6 @@ public class questionPage extends javax.swing.JFrame {
         ansBox = new javax.swing.JTextField();
         outputLabel = new javax.swing.JLabel();
         scoreLabel = new javax.swing.JLabel();
-        backButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -197,13 +197,6 @@ public class questionPage extends javax.swing.JFrame {
         scoreLabel.setFont(new java.awt.Font("Tahoma", 0, 20)); // NOI18N
         scoreLabel.setForeground(new java.awt.Color(255, 255, 255));
 
-        backButton.setText("Quit to title page");
-        backButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                backButtonActionPerformed(evt);
-            }
-        });
-
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -250,18 +243,13 @@ public class questionPage extends javax.swing.JFrame {
                                 .addGap(0, 0, Short.MAX_VALUE))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(429, 429, 429)
-                        .addComponent(ans9Label, javax.swing.GroupLayout.PREFERRED_SIZE, 196, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(backButton)))
+                        .addComponent(ans9Label, javax.swing.GroupLayout.PREFERRED_SIZE, 196, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(backButton)
-                .addGap(26, 26, 26)
+                .addGap(71, 71, 71)
                 .addComponent(nameLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -316,7 +304,7 @@ public class questionPage extends javax.swing.JFrame {
         String answer; 
         answer = ansBox.getText(); 
         ansBox.setText("");
-
+        
          switch (quesNum) {
             case 1:
                 if (answer.equals("1")) { 
@@ -3070,12 +3058,6 @@ public class questionPage extends javax.swing.JFrame {
          }
     }//GEN-LAST:event_ansBoxActionPerformed
 
-    private void backButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButtonActionPerformed
-        this.dispose();
-        titlePage s = new titlePage();      
-        s.setVisible(true);
-    }//GEN-LAST:event_backButtonActionPerformed
-
     /**
      * @param args the command line arguments
      */
@@ -3122,7 +3104,6 @@ public class questionPage extends javax.swing.JFrame {
     private javax.swing.JLabel ans8Label;
     private javax.swing.JLabel ans9Label;
     private javax.swing.JTextField ansBox;
-    private javax.swing.JButton backButton;
     private javax.swing.JLabel iconLabel;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
