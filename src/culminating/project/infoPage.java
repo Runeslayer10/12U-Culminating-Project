@@ -37,7 +37,7 @@ public class infoPage extends javax.swing.JFrame {
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        titlePageButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -97,10 +97,10 @@ public class infoPage extends javax.swing.JFrame {
         jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel11.setText("Instructions");
 
-        jButton1.setText("Title page");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        titlePageButton.setText("Title page");
+        titlePageButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                titlePageButtonActionPerformed(evt);
             }
         });
 
@@ -129,7 +129,7 @@ public class infoPage extends javax.swing.JFrame {
                         .addGap(0, 75, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(jButton1)))
+                        .addComponent(titlePageButton)))
                 .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
@@ -154,7 +154,7 @@ public class infoPage extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jButton1)
+                .addComponent(titlePageButton)
                 .addContainerGap(40, Short.MAX_VALUE))
         );
 
@@ -172,11 +172,11 @@ public class infoPage extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void titlePageButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_titlePageButtonActionPerformed
         this.dispose();
         titlePage s = new titlePage();
         s.setVisible(true);
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_titlePageButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -214,7 +214,6 @@ public class infoPage extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel3;
@@ -225,5 +224,6 @@ public class infoPage extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JButton titlePageButton;
     // End of variables declaration//GEN-END:variables
 }
