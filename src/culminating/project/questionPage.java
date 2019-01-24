@@ -6,6 +6,8 @@
 
 package culminating.project;
 
+import javax.swing.ImageIcon;
+
 /**
  *
  * @author blhad3491
@@ -123,7 +125,7 @@ public class questionPage extends javax.swing.JFrame {
         nameLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         nameLabel.setText("Banded Snail");
 
-        iconLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/culminating/project/Banded Snail.jpg"))); // NOI18N
+        iconLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/culminating/project/Banded snail_1.jpg"))); // NOI18N
 
         ans1Label.setBackground(new java.awt.Color(0, 0, 0));
         ans1Label.setFont(new java.awt.Font("Tahoma", 0, 20)); // NOI18N
@@ -209,7 +211,7 @@ public class questionPage extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addGap(51, 51, 51)
                 .addComponent(outputLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 645, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 41, Short.MAX_VALUE)
                 .addComponent(jLabel2)
                 .addGap(18, 18, 18)
                 .addComponent(ansBox, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -220,29 +222,32 @@ public class questionPage extends javax.swing.JFrame {
                         .addGap(99, 99, 99)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(ans5Label, javax.swing.GroupLayout.PREFERRED_SIZE, 196, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(ans6Label, javax.swing.GroupLayout.PREFERRED_SIZE, 196, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(ans7Label, javax.swing.GroupLayout.PREFERRED_SIZE, 196, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(ans8Label, javax.swing.GroupLayout.PREFERRED_SIZE, 196, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(0, 0, Short.MAX_VALUE)
+                                .addComponent(iconLabel)
+                                .addGap(273, 273, 273)
+                                .addComponent(scoreLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(ans1Label, javax.swing.GroupLayout.PREFERRED_SIZE, 196, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(ans2Label, javax.swing.GroupLayout.PREFERRED_SIZE, 196, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(ans5Label, javax.swing.GroupLayout.PREFERRED_SIZE, 196, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(18, 18, 18)
-                                        .addComponent(ans3Label, javax.swing.GroupLayout.PREFERRED_SIZE, 196, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(ans6Label, javax.swing.GroupLayout.PREFERRED_SIZE, 196, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(18, 18, 18)
-                                        .addComponent(ans4Label, javax.swing.GroupLayout.PREFERRED_SIZE, 196, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(ans7Label, javax.swing.GroupLayout.PREFERRED_SIZE, 196, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(ans8Label, javax.swing.GroupLayout.PREFERRED_SIZE, 196, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                            .addComponent(nameLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                            .addComponent(iconLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(scoreLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                                        .addComponent(ans1Label, javax.swing.GroupLayout.PREFERRED_SIZE, 196, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(nameLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 375, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                                .addComponent(ans2Label, javax.swing.GroupLayout.PREFERRED_SIZE, 196, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(18, 18, 18)
+                                                .addComponent(ans3Label, javax.swing.GroupLayout.PREFERRED_SIZE, 196, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(18, 18, 18)
+                                                .addComponent(ans4Label, javax.swing.GroupLayout.PREFERRED_SIZE, 196, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                .addGap(0, 0, Short.MAX_VALUE))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(429, 429, 429)
                         .addComponent(ans9Label, javax.swing.GroupLayout.PREFERRED_SIZE, 196, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -256,9 +261,9 @@ public class questionPage extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(backButton)
-                .addGap(21, 21, 21)
-                .addComponent(nameLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(26, 26, 26)
+                .addComponent(nameLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(iconLabel)
                     .addComponent(scoreLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -278,7 +283,7 @@ public class questionPage extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(ans9Label, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 58, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 64, Short.MAX_VALUE)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(ansBox, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -292,13 +297,16 @@ public class questionPage extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         pack();
@@ -407,7 +415,10 @@ public class questionPage extends javax.swing.JFrame {
                     clearLabels();
                     quesNum++;
                     startUp();
-                    nameLabel.setText("Field Mushroom");
+                    nameLabel.setText("Field mushroom");
+                    String imageName = "Field Mushroom.jpg";
+                    ImageIcon icon = new ImageIcon(imageName);
+                    iconLabel.setIcon(icon);
                 }else if (answer.equals("8")) {
                     score--;
                     scoreLabel.setText("Score: " + score);
@@ -460,7 +471,10 @@ public class questionPage extends javax.swing.JFrame {
                     scoreLabel.setText("Score: " + score);
                     clearLabels();
                     startUp();
-                    nameLabel.setText("Bostin Fern");
+                    nameLabel.setText("Bostin fern");
+                    String imageName = "Bostin fern.jpg";
+                    ImageIcon icon = new ImageIcon(imageName);
+                    iconLabel.setIcon(icon);
                 } else if (answer.equals("3")) {
                     score--;
                     scoreLabel.setText("Score: " + score);
@@ -548,7 +562,10 @@ public class questionPage extends javax.swing.JFrame {
                     scoreLabel.setText("Score: " + score);
                     clearLabels();
                     startUp();
-                    nameLabel.setText("Sea Sponge");
+                    nameLabel.setText("Sea sponge");
+                    String imageName = "Sea sponge.jpg";
+                    ImageIcon icon = new ImageIcon(imageName);
+                    iconLabel.setIcon(icon);
                 }else if (answer.equals("4")) {
                     score--;
                     scoreLabel.setText("Score: " + score);
@@ -626,7 +643,10 @@ public class questionPage extends javax.swing.JFrame {
                     clearLabels();
                     quesNum++;
                     startUp();
-                    nameLabel.setText("Giant Pacific Octopus");
+                    nameLabel.setText("Giant Pacific octopus");
+                    String imageName = "Giant Pacific octopus.jpg";
+                    ImageIcon icon = new ImageIcon(imageName);
+                    iconLabel.setIcon(icon);
                 } else if (answer.equals("2")) {
                     score--;
                     scoreLabel.setText("Score: " + score);
@@ -769,7 +789,10 @@ public class questionPage extends javax.swing.JFrame {
                     clearLabels();
                     quesNum++;
                     startUp();
-                    nameLabel.setText("White Pine");
+                    nameLabel.setText("White pine");
+                    String imageName = "white fern.jpg";
+                    ImageIcon icon = new ImageIcon(imageName);
+                    iconLabel.setIcon(icon);
                 }else if (answer.equals("8")) {
                     score--;
                     scoreLabel.setText("Score: " + score);
@@ -857,7 +880,10 @@ public class questionPage extends javax.swing.JFrame {
                     scoreLabel.setText("Score: " + score);
                     clearLabels();
                     startUp();
-                    nameLabel.setText("Sea Lamprey");
+                    nameLabel.setText("Sea lamprey");
+                    String imageName = "SeaLamprey.jpg";
+                    ImageIcon icon = new ImageIcon(imageName);
+                    iconLabel.setIcon(icon);
                 }else if (answer.equals("4")) {
                     score--;
                     scoreLabel.setText("Score: " + score);
@@ -995,6 +1021,9 @@ public class questionPage extends javax.swing.JFrame {
                     quesNum++;
                     startUp();
                     nameLabel.setText("E. coli");
+                    String imageName = "E.coli.jpg";
+                    ImageIcon icon = new ImageIcon(imageName);
+                    iconLabel.setIcon(icon);
                 } else if (answer.equals("2")) {
                     score--;
                     scoreLabel.setText("Score: " + score);
@@ -1043,6 +1072,9 @@ public class questionPage extends javax.swing.JFrame {
                     quesNum++;
                     startUp();
                     nameLabel.setText("Paramecium");
+                    String imageName = "Paramecium.jpg";
+                    ImageIcon icon = new ImageIcon(imageName);
+                    iconLabel.setIcon(icon);
                 } else if (answer.equals("3")) {
                     score--;
                     scoreLabel.setText("Score: " + score);
@@ -1086,6 +1118,9 @@ public class questionPage extends javax.swing.JFrame {
                     clearLabels();
                     startUp();
                     nameLabel.setText("Methanogens");
+                    String imageName = "Methanogens.jpg";
+                    ImageIcon icon = new ImageIcon(imageName);
+                    iconLabel.setIcon(icon);
                 } else if (answer.equals("2")) {
                     score--;
                     scoreLabel.setText("Score: " + score);
@@ -1113,7 +1148,10 @@ public class questionPage extends javax.swing.JFrame {
                     clearLabels();
                     quesNum++;
                     startUp();
-                    nameLabel.setText("Red-Tailed Hawk");
+                    nameLabel.setText("Red-tailed hawk");
+                    String imageName = "Red-tail Hawk.jpg";
+                    ImageIcon icon = new ImageIcon(imageName);
+                    iconLabel.setIcon(icon);
                 } else if (answer.equals("2")) {
                     score--;
                     scoreLabel.setText("Score: " + score);
@@ -1281,6 +1319,9 @@ public class questionPage extends javax.swing.JFrame {
                     quesNum++;
                     startUp();
                     nameLabel.setText("Rainbow trout");
+                    String imageName = "Rainbow trout.jpg";
+                    ImageIcon icon = new ImageIcon(imageName);
+                    iconLabel.setIcon(icon);
                 }else if (answer.equals("7")) {
                     score--;
                     scoreLabel.setText("Score: " + score);
@@ -1427,7 +1468,10 @@ public class questionPage extends javax.swing.JFrame {
                     clearLabels();
                     quesNum++;
                     startUp();
-                    nameLabel.setText("Hermit crab");                 
+                    nameLabel.setText("Hermit crab");
+                    String imageName = "Hermit crab.jpg";
+                    ImageIcon icon = new ImageIcon(imageName);
+                    iconLabel.setIcon(icon);
                 }else if (answer.equals("4")) {
                     score--;
                     scoreLabel.setText("Score: " + score);
@@ -1529,7 +1573,10 @@ public class questionPage extends javax.swing.JFrame {
                     clearLabels();
                     quesNum++;
                     startUp();
-                    nameLabel.setText("Beef tapeworm");                 
+                    nameLabel.setText("Beef tapeworm");
+                    String imageName = "Beef Tapeworm.jpg";
+                    ImageIcon icon = new ImageIcon(imageName);
+                    iconLabel.setIcon(icon);
                 }else if (answer.equals("4")) {
                     score--;
                     scoreLabel.setText("Score: " + score);
@@ -1647,7 +1694,10 @@ public class questionPage extends javax.swing.JFrame {
                     clearLabels();
                     quesNum++;
                     startUp();
-                    nameLabel.setText("Baker's yeast");                  
+                    nameLabel.setText("Baker's yeast");
+                    String imageName = "Baker's yeast.jpg";
+                    ImageIcon icon = new ImageIcon(imageName);
+                    iconLabel.setIcon(icon);
                 }else if (answer.equals("5")) {
                     score--;
                     scoreLabel.setText("Score: " + score);
@@ -1716,6 +1766,9 @@ public class questionPage extends javax.swing.JFrame {
                     clearLabels();
                     startUp();
                     nameLabel.setText("White-tailed deer");
+                    String imageName = "White-tailed deer.jpg";
+                    ImageIcon icon = new ImageIcon(imageName);
+                    iconLabel.setIcon(icon);
                 } else if (answer.equals("3")) {
                     score--;
                     scoreLabel.setText("Score: " + score);
@@ -1887,7 +1940,10 @@ public class questionPage extends javax.swing.JFrame {
                     clearLabels();
                     quesNum++;
                     startUp();
-                    nameLabel.setText("Plasmodia slime mold");                      
+                    nameLabel.setText("Plasmodia slime mold");
+                    String imageName = "Plasmodia slime mold.jpg";
+                    ImageIcon icon = new ImageIcon(imageName);
+                    iconLabel.setIcon(icon);
                 }else {
                     outputLabel.setText("Please enter a number between 1-7 to answer.");
                 }
@@ -1925,7 +1981,10 @@ public class questionPage extends javax.swing.JFrame {
                     scoreLabel.setText("Score: " + score);
                     clearLabels();
                     startUp();
-                    nameLabel.setText("Timber rattlesnake");                   
+                    nameLabel.setText("Timber rattlesnake");
+                    String imageName = "Timber rattlesnake.jpg";
+                    ImageIcon icon = new ImageIcon(imageName);
+                    iconLabel.setIcon(icon);
                 } else if (answer.equals("2")) {
                     score--;
                     scoreLabel.setText("Score: " + score);
@@ -2093,6 +2152,9 @@ public class questionPage extends javax.swing.JFrame {
                     quesNum++;
                     startUp();
                     nameLabel.setText("Monarch butterfly");
+                    String imageName = "Monarch butterfly.jpg";
+                    ImageIcon icon = new ImageIcon(imageName);
+                    iconLabel.setIcon(icon);
                 }else if (answer.equals("6")) {
                     score--;
                     scoreLabel.setText("Score: " + score);
@@ -2185,7 +2247,10 @@ public class questionPage extends javax.swing.JFrame {
                     clearLabels();
                     quesNum++;
                     startUp();
-                    nameLabel.setText("Sphagnum moss");             
+                    nameLabel.setText("Sphagnum moss"); 
+                    String imageName = "Sphagnum moss.jpg";
+                    ImageIcon icon = new ImageIcon(imageName);
+                    iconLabel.setIcon(icon);
                 }else if (answer.equals("4")) {
                     score--;
                     scoreLabel.setText("Score: " + score);
@@ -2283,7 +2348,10 @@ public class questionPage extends javax.swing.JFrame {
                     scoreLabel.setText("Score: " + score);
                     clearLabels();
                     startUp();
-                    nameLabel.setText("Bumblebee");                   
+                    nameLabel.setText("Bumblebee");
+                    String imageName = "Bumblebee.jpg";
+                    ImageIcon icon = new ImageIcon(imageName);
+                    iconLabel.setIcon(icon);
                 } else if (answer.equals("2")) {
                     score--;
                     scoreLabel.setText("Score: " + score);
@@ -2381,7 +2449,10 @@ public class questionPage extends javax.swing.JFrame {
                     clearLabels();
                     quesNum++;
                     startUp();
-                    nameLabel.setText("Euglena");             
+                    nameLabel.setText("Euglena");  
+                    String imageName = "Euglena.jpg";
+                    ImageIcon icon = new ImageIcon(imageName);
+                    iconLabel.setIcon(icon);
                 }else if (answer.equals("4")) {
                     score--;
                     scoreLabel.setText("Score: " + score);
@@ -2449,7 +2520,10 @@ public class questionPage extends javax.swing.JFrame {
                     scoreLabel.setText("Score: " + score);
                     clearLabels();
                     startUp();
-                    nameLabel.setText("Blood fluke");                    
+                    nameLabel.setText("Blood fluke"); 
+                    String imageName = "Blood fluke.jpg";
+                    ImageIcon icon = new ImageIcon(imageName);
+                    iconLabel.setIcon(icon);
                 } else if (answer.equals("2")) {
                     score--;
                     scoreLabel.setText("Score: " + score);
@@ -2552,7 +2626,10 @@ public class questionPage extends javax.swing.JFrame {
                     clearLabels();
                     quesNum++;
                     startUp();
-                    nameLabel.setText("Portuguese Man-o-war");                 
+                    nameLabel.setText("Portuguese Man-o-war");  
+                    String imageName = "Portuguese Man-o-war.jpg";
+                    ImageIcon icon = new ImageIcon(imageName);
+                    iconLabel.setIcon(icon);
                 }else if (answer.equals("5")) {
                     score--;
                     scoreLabel.setText("Score: " + score);
@@ -2656,6 +2733,9 @@ public class questionPage extends javax.swing.JFrame {
                     quesNum++;
                     startUp();
                     nameLabel.setText("Tarantula");  
+                    String imageName = "Tarantula.jpg";
+                    ImageIcon icon = new ImageIcon(imageName);
+                    iconLabel.setIcon(icon);
                 } else if (answer.equals("3")) {
                     score--;
                     scoreLabel.setText("Score: " + score);
@@ -2773,7 +2853,10 @@ public class questionPage extends javax.swing.JFrame {
                     clearLabels();
                     quesNum++;
                     startUp();
-                    nameLabel.setText("Hammerhead shark");             
+                    nameLabel.setText("Hammerhead shark");
+                    String imageName = "Hammerhead shark.jpg";
+                    ImageIcon icon = new ImageIcon(imageName);
+                    iconLabel.setIcon(icon);
                 }else if (answer.equals("4")) {
                     score--;
                     scoreLabel.setText("Score: " + score);
@@ -2943,6 +3026,9 @@ public class questionPage extends javax.swing.JFrame {
                     scoreLabel.setText("");
                     outputLabel.setText("Type 0 to go back to the title page! Thank you"
                             + " for taking our quiz!");
+                    String imageName = "Happy man.jpg";
+                    ImageIcon icon = new ImageIcon(imageName);
+                    iconLabel.setIcon(icon);
                 } else if (answer.equals("3")) {
                     score--;
                     scoreLabel.setText("Score: " + score);
