@@ -114,12 +114,13 @@ public class titlePage extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    //this is the button to start the quiz
     private void startButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_startButtonActionPerformed
         this.dispose();
         questionPage s = new questionPage();
         s.setVisible(true);
     }//GEN-LAST:event_startButtonActionPerformed
-
+    // this button is to go to the info page
     private void infoButtomActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_infoButtomActionPerformed
         this.dispose();
         infoPage s = new infoPage();

@@ -1,7 +1,11 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Blake Hadaway and Andrew Archer
+ * January 30th, 2019
+ * This is a program disigned to test grade 11 bio students about organisms domains, kingdoms, division, and class.
+ * The program is a question answer program, with a base GUI to help navagate through the 75 question long quiz.
+ * There are three GUI's that the user can navagate to, the title screen, equipped with two buttons to go to the other GUI screens.
+ * The info page is all the rules that the user needs to follow, which is pretty much non, it just tells them the input layout for the quiz and how to do it.
+ * The question page is where all the code is, this is where the whole quiz is, all 75 answers, and lots of wrong answers waiting to be inputed.
  */
 
 package culminating.project;
@@ -15,11 +19,14 @@ import javax.swing.ImageIcon;
 
 public class questionPage extends javax.swing.JFrame {
 
+    //Global variables
     int quesNum = 1;
     int score = 0;
     
+    // Reseting the score so that the users immediately sees there score change when they get an answer right, or wrong.
     public String ScoreCount = "Score: " + score;
      
+    // This method is used to start up the program, to set the set the score at first, and reset the question boxs when a question has been fully answered.
     public void startUp() {
         scoreLabel.setText("Score: " + score);
         ans1Label.setText(arrayAnsSet1[0]);
@@ -27,6 +34,7 @@ public class questionPage extends javax.swing.JFrame {
         ans9Label.setText(arrayAnsSet1[2]); 
     }
     
+    //this is a quick method that clears all the labels, usually used at the end of the question.
     public void clearLabels() {
         ans1Label.setText("");
         ans2Label.setText("");
@@ -40,6 +48,7 @@ public class questionPage extends javax.swing.JFrame {
         outputLabel.setText("");
     }
     
+    // this are the possible answers stored in the array
     String[] arrayAnsSet1 = new String[3]; 
     String[] arrayAnsSet2 = new String[4]; 
     String[] arrayAnsSet3 = new String[9]; 
@@ -53,6 +62,7 @@ public class questionPage extends javax.swing.JFrame {
     public questionPage() {
         initComponents();
         
+        //setting all the elements in the 5 arrays.
         arrayAnsSet1[0] = "1. Archaea";
         arrayAnsSet1[1] = "2. Bacteria";
         arrayAnsSet1[2] = "3. Eukaryota";
@@ -301,10 +311,13 @@ public class questionPage extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void ansBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ansBoxActionPerformed
+        
+        // The answer variable is used to check the user input
         String answer; 
         answer = ansBox.getText(); 
         ansBox.setText("");
         
+        // The switch is used to move from case to case
          switch (quesNum) {
             case 1:
                 if (answer.equals("1")) { 
@@ -331,6 +344,7 @@ public class questionPage extends javax.swing.JFrame {
                 }
                 break;
                 
+                // next question, setting new answer options
                 case 2:
                 if (answer.equals("1")) { 
                     score--;
@@ -366,6 +380,7 @@ public class questionPage extends javax.swing.JFrame {
                 }
                 break;
                 
+                // And again and again and again
                 case 3:
                 if (answer.equals("1")) { 
                     score--;
@@ -399,7 +414,6 @@ public class questionPage extends javax.swing.JFrame {
                     ans6Label.setText("");
                 }else if (answer.equals("7")) {
                     score++;
-                    scoreLabel.setText("Score: " + score);
                     clearLabels();
                     quesNum++;
                     startUp();
@@ -456,7 +470,6 @@ public class questionPage extends javax.swing.JFrame {
                 } else if (answer.equals("2")) {
                     quesNum++;
                     score++;
-                    scoreLabel.setText("Score: " + score);
                     clearLabels();
                     startUp();
                     nameLabel.setText("Bostin fern");
@@ -547,7 +560,6 @@ public class questionPage extends javax.swing.JFrame {
                 } else if (answer.equals("3")) {
                     quesNum++;
                     score++;
-                    scoreLabel.setText("Score: " + score);
                     clearLabels();
                     startUp();
                     nameLabel.setText("Sea sponge");
@@ -627,7 +639,6 @@ public class questionPage extends javax.swing.JFrame {
                 case 11:
                 if (answer.equals("1")) { 
                     score++;
-                    scoreLabel.setText("Score: " + score);
                     clearLabels();
                     quesNum++;
                     startUp();
@@ -773,7 +784,6 @@ public class questionPage extends javax.swing.JFrame {
                     ans6Label.setText("");
                 }else if (answer.equals("7")) {
                     score++;
-                    scoreLabel.setText("Score: " + score);
                     clearLabels();
                     quesNum++;
                     startUp();
@@ -865,7 +875,6 @@ public class questionPage extends javax.swing.JFrame {
                 } else if (answer.equals("3")) {
                     quesNum++;
                     score++;
-                    scoreLabel.setText("Score: " + score);
                     clearLabels();
                     startUp();
                     nameLabel.setText("Sea lamprey");
@@ -1004,7 +1013,6 @@ public class questionPage extends javax.swing.JFrame {
                 case 21:
                 if (answer.equals("1")) { 
                     score++;
-                    scoreLabel.setText("Score: " + score);
                     clearLabels();
                     quesNum++;
                     startUp();
@@ -1055,7 +1063,6 @@ public class questionPage extends javax.swing.JFrame {
                     ans1Label.setText("");
                 } else if (answer.equals("2")) {
                     score++;
-                    scoreLabel.setText("Score: " + score);
                     clearLabels();
                     quesNum++;
                     startUp();
@@ -1102,7 +1109,6 @@ public class questionPage extends javax.swing.JFrame {
                 if (answer.equals("1")) { 
                     quesNum++;
                     score++;
-                    scoreLabel.setText("Score: " + score);
                     clearLabels();
                     startUp();
                     nameLabel.setText("Methanogens");
@@ -1132,7 +1138,6 @@ public class questionPage extends javax.swing.JFrame {
                 case 25:
                 if (answer.equals("1")) { 
                     score++;
-                    scoreLabel.setText("Score: " + score);
                     clearLabels();
                     quesNum++;
                     startUp();
@@ -1302,7 +1307,6 @@ public class questionPage extends javax.swing.JFrame {
                     ans6Label.setText("");
                 }else if (answer.equals("6")) {
                     score++;
-                    scoreLabel.setText("Score: " + score);
                     clearLabels();
                     quesNum++;
                     startUp();
@@ -1452,7 +1456,6 @@ public class questionPage extends javax.swing.JFrame {
                     ans2Label.setText("");
                 } else if (answer.equals("3")) {
                     score++;
-                    scoreLabel.setText("Score: " + score);
                     clearLabels();
                     quesNum++;
                     startUp();
@@ -1557,7 +1560,6 @@ public class questionPage extends javax.swing.JFrame {
                     ans2Label.setText("");
                 } else if (answer.equals("3")) {
                     score++;
-                    scoreLabel.setText("Score: " + score);
                     clearLabels();
                     quesNum++;
                     startUp();
@@ -1678,7 +1680,6 @@ public class questionPage extends javax.swing.JFrame {
                     ans3Label.setText("");           
                 }else if (answer.equals("4")) {
                     score++;
-                    scoreLabel.setText("Score: " + score);
                     clearLabels();
                     quesNum++;
                     startUp();
@@ -1750,7 +1751,6 @@ public class questionPage extends javax.swing.JFrame {
                 } else if (answer.equals("2")) {
                     quesNum++;
                     score++;
-                    scoreLabel.setText("Score: " + score);
                     clearLabels();
                     startUp();
                     nameLabel.setText("White-tailed deer");
@@ -1924,7 +1924,6 @@ public class questionPage extends javax.swing.JFrame {
                     ans7Label.setText(""); 
                 }else if (answer.equals("7")) {
                     score++;
-                    scoreLabel.setText("Score: " + score);
                     clearLabels();
                     quesNum++;
                     startUp();
@@ -1966,7 +1965,6 @@ public class questionPage extends javax.swing.JFrame {
                 if (answer.equals("1")) { 
                     quesNum++;
                     score++;
-                    scoreLabel.setText("Score: " + score);
                     clearLabels();
                     startUp();
                     nameLabel.setText("Timber rattlesnake");
@@ -2135,7 +2133,6 @@ public class questionPage extends javax.swing.JFrame {
                     ans4Label.setText("");                  
                 }else if (answer.equals("5")) {
                     score++;
-                    scoreLabel.setText("Score: " + score);
                     clearLabels();
                     quesNum++;
                     startUp();
@@ -2231,7 +2228,6 @@ public class questionPage extends javax.swing.JFrame {
                     ans2Label.setText("");
                 } else if (answer.equals("3")) {
                     score++;
-                    scoreLabel.setText("Score: " + score);
                     clearLabels();
                     quesNum++;
                     startUp();
@@ -2333,7 +2329,6 @@ public class questionPage extends javax.swing.JFrame {
                 if (answer.equals("1")) { 
                     quesNum++;
                     score++;
-                    scoreLabel.setText("Score: " + score);
                     clearLabels();
                     startUp();
                     nameLabel.setText("Bumblebee");
@@ -2433,7 +2428,6 @@ public class questionPage extends javax.swing.JFrame {
                     ans2Label.setText("");
                 } else if (answer.equals("3")) {
                     score++;
-                    scoreLabel.setText("Score: " + score);
                     clearLabels();
                     quesNum++;
                     startUp();
@@ -2505,7 +2499,6 @@ public class questionPage extends javax.swing.JFrame {
                 if (answer.equals("1")) { 
                     quesNum++;
                     score++;
-                    scoreLabel.setText("Score: " + score);
                     clearLabels();
                     startUp();
                     nameLabel.setText("Blood fluke"); 
@@ -2610,7 +2603,6 @@ public class questionPage extends javax.swing.JFrame {
                     ans3Label.setText("");                   
                 }else if (answer.equals("4")) {
                     score++;
-                    scoreLabel.setText("Score: " + score);
                     clearLabels();
                     quesNum++;
                     startUp();
@@ -2716,7 +2708,6 @@ public class questionPage extends javax.swing.JFrame {
                     ans1Label.setText("");
                 } else if (answer.equals("2")) {
                     score++;
-                    scoreLabel.setText("Score: " + score);
                     clearLabels();
                     quesNum++;
                     startUp();
@@ -2837,7 +2828,6 @@ public class questionPage extends javax.swing.JFrame {
                     ans2Label.setText("");
                 } else if (answer.equals("3")) {
                     score++;
-                    scoreLabel.setText("Score: " + score);
                     clearLabels();
                     quesNum++;
                     startUp();
