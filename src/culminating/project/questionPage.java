@@ -10,6 +10,7 @@
 
 package culminating.project;
 
+// This import is used to have the ability to change the picture inside the GUI, so that we don't have to make multiple GUI.
 import javax.swing.ImageIcon;
 
 /**
@@ -95,6 +96,7 @@ public class questionPage extends javax.swing.JFrame {
         arrayAnsSet5[5] = "6. Aves";
         arrayAnsSet5[6] = "7. Mammalia";
         
+        // Setting the labels so that the quiz can begin
         startUp();   
     }
 
